@@ -1,0 +1,125 @@
+/*main conteudo principal*/
+
+.intro-bg {
+    background-color: var(--cor-12);
+    /* back pegando de ponta a ponta*/
+
+
+    box-shadow: inset 0px -120px var(--cor-0);
+    /*inset é sombra interna*/
+
+
+
+    /*-120px para ela ficar em baixo*/
+
+
+}
+
+.intro {
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 0px 40px;
+
+    max-width: 1200px;
+    /* evita que o elemento se expande em tela maiores,
+    quebrando o layout*/
+
+    padding-left: 20px;
+    /* faz com que os elementos tem uma leve distancia entre o canto, quando diminui a tela*/
+    padding-right: 20px;
+
+
+    margin-left: auto;
+    /*Isso centraliza horizontalmente o elemento dentro de seu contêiner, ficando travado os elementos aumentando a tela*/
+    margin-right: auto;
+
+}
+
+.intro img {
+    height: 100%;
+
+    object-fit: cover;
+    /*serve para redimensionar uma imagem ou vídeo para que preencha todo o seu contêiner,
+     mantendo a proporção original (aspect ratio)*/
+    border-radius: 5px;
+
+    /*nao ultilizar img direto no grid no html*/
+}
+
+.intro-conteudo {
+    align-self: end;
+    /*alinhamento vertical*/
+
+    padding-bottom: 200px;
+}
+
+.intro h1 {
+    margin-bottom: 32px;
+}
+
+
+
+
+.intro p {
+    margin-bottom: 20px;
+}
+
+
+
+
+
+
+@media(max-width: 1200px) {
+    .intro h1 {
+        margin-bottom: 32px;
+
+    }
+
+    .intro p {
+        margin-bottom: 20px;
+
+    }
+
+}
+
+
+
+
+
+@media(max-width: 800px) {
+
+    .intro-bg {
+        background-color: var(--cor-11);
+        padding-top: 40px;
+        box-shadow: inset 0 -60px var(--cor-0);
+    }
+
+    .intro {
+        grid-template-columns: 1fr;
+        gap: 32px;
+    }
+
+    .intro-conteudo {
+        padding-bottom: 0px;
+    }
+
+    .intro h1 {
+        margin-bottom: 16px;
+
+       
+
+    }
+
+    .intro img {
+        height: 300px;
+        width: 100%;
+    }
+
+    .intro a {
+        font-size: 12px;
+        font-weight: bolder;
+    }
+
+}

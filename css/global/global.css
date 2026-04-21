@@ -1,0 +1,19 @@
+body {
+    padding-bottom: 600px;
+    margin: 0px;
+    color: #111111;
+
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
