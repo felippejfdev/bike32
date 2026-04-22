@@ -7,7 +7,7 @@
 
     color: var(--cor-p5);
 
-    padding: 20px;
+    padding: 20.5px;
 
     display: inline-block;
     /*para que pegue o padding corretamente*/
@@ -27,7 +27,7 @@
         padding: 12px 16px;
         font-size: 1rem;
         font-weight: bold;
-        background-color: rgb(182, 239, 8);
+        background-color:var(--cor-p1);
     }
 
 
