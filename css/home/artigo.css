@@ -1,17 +1,22 @@
-
-
-.artigo-bg{
-   background-color: rgb(213, 225, 225);
+.artigo-bg {
+    background-color: rgb(213, 225, 225);
 }
 
-.artigo-conteudo{
+.artigo-conteudo {
     display: flex;
     gap: 46px;
+    justify-content: center;
+    flex-wrap: wrap;
    
+
 }
 
 .artigo-conteudo img {
-   width: 300px;
-    height: auto;
     
+}
+
+.bikes{
+    width: 300px;
+    max-width: 200%;
+    height: auto;
 }
