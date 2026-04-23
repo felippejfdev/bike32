@@ -1,0 +1,17 @@
+
+
+.artigo-bg{
+   background-color: rgb(213, 225, 225);
+}
+
+.artigo-conteudo{
+    display: flex;
+    gap: 46px;
+   
+}
+
+.artigo-conteudo img {
+   width: 300px;
+    height: auto;
+    
+}
