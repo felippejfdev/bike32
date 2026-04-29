@@ -1,11 +1,7 @@
 
-*{
-    box-sizing: border-box;
-}
-
 
 .artigo-bg {
-    background-color: rgb(243, 86, 86);
+    background-color: var(--cor-0);
     min-height: 500px;
 
 
@@ -15,69 +11,104 @@
 
 .artigo-conteudo {
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
     gap: 46px;
-    justify-content: center;
-    align-items: center;
-    min-height: 500px;
-    
-
-}
-
-.bikes {
-    width: 100%;
-    max-width: 600px;
-    object-fit: cover;
-    align-items: center;
-    margin: 10px;
-    border-radius: 5px;
-    display: block;
-    /*max-height: 650px;*/
-
-}
-
-
-
-h2 {
-padding-left: 100px;
-}
-
-
-
-
-@media(max-width:800px){
-    .artigo-conteudo {
-    display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    gap: 26px;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
     min-height: 500px;
-
-}
-
-.artigo-bg {
-    background-color: rgb(112, 243, 86);
-    min-height: 500px;
-
-
 }
 
 .bikes {
     width: 100%;
-    max-width: 400px;
+    max-width: 500px;
     object-fit: cover;
     align-items: center;
+    margin: 0px;
     border-radius: 5px;
     display: block;
     /*max-height: 650px;*/
-    margin: 10px;
 
 }
+
+
 h2 {
-padding-left: 100px;
-margin: 20px;
+    padding-left: 100px;
 }
+
+.card {
+    background-color: var(--cor-0);
+}
+
+.card:hover{
+    background-color: var(--cor-2);
+    cursor: pointer;
+}
+
+.produtos {
+  text-align: left;
+  padding: 12px 0;
+  margin: 0;
+  list-style: none;
+}
+
+.produtos li {
+  position: relative;
+  padding-left: 20px;
+
+}
+
+
+
+
+.produtos li::before {
+    content: "●";
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    font-size: 15px;
+    color: var(--cor-p1);
+  
+}
+
+
+
+
+
+
+@media(max-width:800px) {
+    .artigo-conteudo {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 26px;
+        justify-content: center;
+        align-items: center;
+        min-height: 500px;
+
+    }
+
+    .artigo-bg {
+        background-color: rgb(112, 243, 86);
+        min-height: 500px;
+
+
+    }
+
+    .bikes {
+        width: 100%;
+        max-width: 400px;
+        object-fit: cover;
+        align-items: center;
+        border-radius: 5px;
+        display: block;
+        /*max-height: 650px;*/
+        margin: 10px;
+
+    }
+
+    h2 {
+        padding-left: 100px;
+        margin: 20px;
+    }
 }
